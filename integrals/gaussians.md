@@ -1,10 +1,10 @@
-## Integrals of Gaussians
+## Gaussian
 $$
 \int_{-\infty}^\infty \frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{x^2}{2\sigma^2}\right)dx = 1
 $$
 
-### Polynomial and Gaussians
-#### 1st order
+## Polynomial and Gaussians
+### 1st order
 
 both sides
 
