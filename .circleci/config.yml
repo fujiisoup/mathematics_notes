@@ -14,8 +14,7 @@ jobs:
             - run:
                 name: Generating current version
                 command: |
-                    cd doc
-                    make
+                    ./make.sh
     deploy:
         docker:
             - image: koppor/texlive
@@ -29,12 +28,12 @@ jobs:
             - run:
                 name: Generating current version
                 command: |
-                    pandoc README.md integrals/*.md -f markdown -o math_note.pdf --variable --toc 
+                    ./make.sh
             - run:
                 name: Commit to repository
                 command: |
                     git checkout -b release-pdf
-                    git add math_note.pdf
+                    git add -f math_note.pdf
                     git commit -m "[CircleCI] Releasing PDF @$(date +'%Y/%m/%d %I:%M') [ci skip]"
                     git push -f origin release-pdf
 
