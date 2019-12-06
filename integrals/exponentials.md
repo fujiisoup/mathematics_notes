@@ -1,4 +1,4 @@
-## An exponential
+# Exponential
 $$
 \int_0^\infty \exp\left(-\alpha x\right) dx = \frac{1}{\alpha}
 $$

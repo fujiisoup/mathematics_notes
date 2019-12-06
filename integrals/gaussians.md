@@ -1,4 +1,4 @@
-## Gaussian
+# Gaussian
 $$
 \int_{-\infty}^\infty \frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{x^2}{2\sigma^2}\right)dx = 1
 $$
