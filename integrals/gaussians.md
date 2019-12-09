@@ -1,33 +1,59 @@
-# Gaussian
+# List of Gaussian Basis Integrals
+
+## Basic integrals
 $$
-\int_{-\infty}^\infty \frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{x^2}{2\sigma^2}\right)dx = 1
+\int_{0}^{u} e^{-x^2}\mathrm{d}x = \frac{\sqrt{\pi}}{2}\mathrm{erf}(u)
 $$
 
-## Polynomial and Gaussians
+$$
+\int_{0}^{u} e^{-\alpha x^2}\mathrm{d}x = \frac{\sqrt{\pi}}{2\sqrt{\alpha}}\mathrm{erf}(\sqrt{\alpha}u)
+$$
+
+## Gaussian basis integrals
 ### 1st order
-
-both sides
-
 $$
-\int_{-\infty}^\infty x\frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{x^2}{2\sigma^2}\right)dx = 0
+\int_{0}^{u} xe^{-\alpha x^2}\mathrm{d}x =
+\frac{1}{2\alpha}\left[1-e^{-\alpha u^2} \right]
 $$
 
-positive side
-
 $$
-\int_0^\infty x\frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{x^2}{2\sigma^2}\right)dx = 
+\int_{0}^{\infty} xe^{-\alpha x^2}\mathrm{d}x = \frac{1}{2\alpha}
+$$
+$$
+\int_{\infty}^{\infty} xe^{-\alpha x^2}\mathrm{d}x = 0
 $$
 
 ### 2nd order
-both sides
-
 $$
-\int_{-\infty}^\infty x^2\frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{x^2}{2\sigma^2}\right)dx = 0
-$$
-
-positive side
-
-$$
-\int_0^\infty x^2\frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{x^2}{2\sigma^2}\right)dx = 
+\int_{0}^{u} x^2e^{-\alpha x^2}\mathrm{d}x =
+\frac{1}{2\alpha\sqrt{\alpha}}
+ \left[
+  \frac{\sqrt{\pi}}{2}\mathrm{erf}(\sqrt{\alpha}u)-\sqrt{\alpha}ue^{\alpha u^2}
+ \right]
 $$
 
+$$
+\int_{0}^{\infty} x^2e^{-\alpha x^2}\mathrm{d}x =
+ \frac{\sqrt{\pi}}{4\alpha\sqrt{\alpha}}
+$$
+$$
+\int_{-\infty}^{\infty} x^2e^{-\alpha x^2}\mathrm{d}x =
+ \frac{\sqrt{\pi}}{2\alpha\sqrt{\alpha}}
+$$
+
+### 3rd order
+$$
+\int_{0}^{u} x^3e^{-\alpha x^2}\mathrm{d}x =
+\frac{1}{2\alpha\sqrt{\alpha}}
+ \left[
+  1 - (1+\alpha u^2)e^{-\alpha u^2}
+ \right]
+$$
+
+$$
+\int_{0}^{\infty} x^3e^{-\alpha x^2}\mathrm{d}x =
+ \frac{1}{2\alpha^2}
+$$
+$$
+\int_{-\infty}^{\infty} x^3e^{-\alpha x^2}\mathrm{d}x = 0
+$$
