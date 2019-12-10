@@ -6,7 +6,7 @@ $$
 ## Polynomial and exponential
 ### 1st order
 $$
-\int_0^\infty x \exp\left(-\alpha x\right) dx = 
+\int_0^\infty x \exp\left(-\alpha x\right) dx = \frac{1}{\alpha^2}
 $$
 
 ### 2nd order
