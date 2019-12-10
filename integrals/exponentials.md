@@ -16,7 +16,7 @@ $$
 
 ### 3rd order
 $$
-\int_0^\infty x^3 \exp\left(-\alpha x\right) dx = 
+\int_0^\infty x^3 \exp\left(-\alpha x\right) dx = \frac{6}{\alpha^4}
 $$
 
 ### n-th order
