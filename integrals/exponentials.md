@@ -21,5 +21,5 @@ $$
 
 ### n-th order
 $$
-\int_0^\infty x^n \exp\left(-\alpha x\right) dx = 
+\int_0^\infty x^n \exp\left(-\alpha x\right) dx = \frac{n!}{\alpha^(n+1)}
 $$
