@@ -11,7 +11,7 @@ $$
 
 ### 2nd order
 $$
-\int_0^\infty x^2 \exp\left(-\alpha x\right) dx = 
+\int_0^\infty x^2 \exp\left(-\alpha x\right) dx = \frac{2}{\alpha^2}
 $$
 
 ### 3rd order
