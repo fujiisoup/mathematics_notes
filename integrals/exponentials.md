@@ -23,3 +23,10 @@ $$
 $$
 \int_0^\infty x^n \exp\left(-\alpha x\right) dx = 
 $$
+
+
+## Related with Black-body Radiation
+### 3rd order
+$$
+\int_0^\infty \frac{x^3}{e^{x} - 1}dx = \frac{\pi^4}{15}
+$$
